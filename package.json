@@ -5,11 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && vite build --no-lint",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tabler/icons-react": "^3.28.1",
     "clsx": "^2.1.1",
     "framer-motion": "^11.18.0",
     "lucide-react": "^0.471.1",

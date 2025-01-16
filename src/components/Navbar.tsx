@@ -13,7 +13,7 @@ const Navbar = () => {
           {/* Logo and primary navigation */}
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <div className="text-emerald-400 font-bold text-xl">Logo</div>
+              <div className="text-emerald-400 font-bold text-2xl">PoVTech.</div>
             </div>
             <div className="hidden md:block ml-10">
               <div className="flex items-center space-x-4">
@@ -34,24 +34,6 @@ const Navbar = () => {
                   className="flex items-center px-3 py-2 text-lg hover:underline decoration-emerald-400 underline-offset-4"
                 >
                   Solutions
-                </a>
-                <a
-                  href="#"
-                  className="px-3 py-2 text-lg hover:underline decoration-emerald-400 underline-offset-4"
-                >
-                  Enterprise
-                </a>
-                <a
-                  href="#"
-                  className="px-3 py-2 text-lg hover:underline decoration-emerald-400 underline-offset-4"
-                >
-                  Developers
-                </a>
-                <a
-                  href="#"
-                  className="px-3 py-2 text-lg hover:underline decoration-emerald-400 underline-offset-4"
-                >
-                  Resources
                 </a>
               </div>
             </div>
