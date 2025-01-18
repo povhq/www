@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import { Menu, X, Search, ChevronDown } from "lucide-react";
+import { Menu, X, Search, ChevronDown, ArrowRight} from "lucide-react";
 import Headline from "./Headline";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-[#1A1C1F] text-white pb-4 fixed top-0 left-0 right-0 z-50">
+    <nav className="bg-[#1A1C1F] text-white pb-4 fixed top-0 left-0 right-0 z-50 shadow-lg">
       <Headline />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
@@ -21,19 +21,25 @@ const Navbar = () => {
                   href="#"
                   className="flex items-center px-3 py-2 text-lg hover:underline decoration-emerald-400 underline-offset-4"
                 >
-                  Platform
+                  Solutions
                 </a>
                 <a
                   href="#"
                   className="px-3 py-2 text-lg hover:underline decoration-emerald-400 underline-offset-4"
                 >
-                  Pricing
+                  Products
                 </a>
                 <a
                   href="#"
                   className="flex items-center px-3 py-2 text-lg hover:underline decoration-emerald-400 underline-offset-4"
                 >
-                  Solutions
+                  Customers
+                </a>
+                <a
+                  href="#"
+                  className="flex items-center px-3 py-2 text-lg hover:underline decoration-emerald-400 underline-offset-4"
+                >
+                  Blog
                 </a>
               </div>
             </div>
@@ -46,12 +52,6 @@ const Navbar = () => {
             </button>
             <a
               href="#"
-              className="text-lg hover:underline decoration-emerald-400 underline-offset-4"
-            >
-              Log in
-            </a>
-            <a
-              href="#"
               className="text-lg border border-emerald-400 text-emerald-500 px-4 py-2 rounded-md"
             >
               Get Started Free
@@ -61,6 +61,12 @@ const Navbar = () => {
               className="text-lg border border-white  px-4 py-2 rounded-md"
             >
               Get Pricing
+            </a>
+            <a
+              href="#"
+              className="text-lg hover:underline decoration-emerald-400 underline-offset-4"
+            >
+               <ArrowRight className="h-4 w-4 -rotate-45" />Login to Socially
             </a>
           </div>
 
