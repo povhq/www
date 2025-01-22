@@ -23,7 +23,7 @@ interface FormData {
 }
 
 const Solution: React.FC<SolutionProps> = ({ icon, title, description }) => (
-  <div className="p-6 bg-[#1A1C1F] rounded-xl hover:bg-slate-800 transition-all duration-300">
+  <div className="p-6 bg-[#1A1C1F] rounded-xl hover:bg-slate-700 transition-all duration-300">
     <div className="text-emerald-400 w-12 h-12 mb-4">
       {icon}
     </div>
@@ -150,7 +150,7 @@ function Footer() {
   return (
     <div className="min-h-screen bg-[#1A1C1F]">
       {/* Solutions Section */}
-      <section className="py-20 px-4 md:px-8 border-t border-b border-slate-700">
+      <section id="solutions" className="py-20 px-4 md:px-8 border-t border-b border-slate-700">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Solutions</h2>
@@ -165,7 +165,7 @@ function Footer() {
       </section>
 
       {/* Products Section */}
-      <section className="py-20 px-4 md:px-8 bg-[#1A1C1F]">
+      <section id="products" className="py-20 px-4 md:px-8 bg-[#1A1C1F]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Products</h2>
@@ -195,7 +195,7 @@ function Footer() {
                 required
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                className="w-full px-4 py-2 rounded-lg bg-slate-800 border border-slate-700 text-white focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                className="w-full px-4 py-2 rounded-lg bg-[#1A1C1F] border border-slate-700 text-white focus:outline-none focus:ring-2 focus:ring-emerald-500"
               />
             </div>
             <div>
@@ -206,7 +206,7 @@ function Footer() {
                 required
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                className="w-full px-4 py-2 rounded-lg bg-slate-800 border border-slate-700 text-white focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                className="w-full px-4 py-2 rounded-lg bg-[#1A1C1F] border border-slate-700 text-white focus:outline-none focus:ring-2 focus:ring-emerald-500"
               />
             </div>
             <div>
@@ -216,7 +216,7 @@ function Footer() {
                 id="companyName"
                 value={formData.companyName}
                 onChange={(e) => setFormData({ ...formData, companyName: e.target.value })}
-                className="w-full px-4 py-2 rounded-lg bg-slate-800 border border-slate-700 text-white focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                className="w-full px-4 py-2 rounded-lg bg-[#1A1C1F] border border-slate-700 text-white focus:outline-none focus:ring-2 focus:ring-emerald-500"
               />
             </div>
             <div>
@@ -232,19 +232,19 @@ function Footer() {
                 styles={{
                   control: (base) => ({
                     ...base,
-                    backgroundColor: '#1e293b',
+                    backgroundColor: '#1A1C1F',
                     borderColor: '#334155',
                     '&:hover': {
-                      borderColor: '#475569'
+                      borderColor: ''
                     }
                   }),
                   menu: (base) => ({
                     ...base,
-                    backgroundColor: '#1e293b'
+                    backgroundColor: '#1A1C1F'
                   }),
                   option: (base, state) => ({
                     ...base,
-                    backgroundColor: state.isFocused ? '#334155' : '#1e293b',
+                    backgroundColor: state.isFocused ? '#334155' : '#1A1C1F',
                     color: 'white'
                   }),
                   multiValue: (base) => ({
@@ -264,7 +264,8 @@ function Footer() {
                   }),
                   input: (base) => ({
                     ...base,
-                    color: 'white'
+                    color: 'white',
+                    borderColor:'emerald'
                   })
                 }}
                 required
@@ -281,7 +282,7 @@ function Footer() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-slate-900 border-t border-slate-800">
+      <footer className="bg-[#1A1C1F] border-t border-slate-800">
         <div className="max-w-7xl mx-auto px-4 md:px-8 py-12">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
             {/* Company Info */}

@@ -5,7 +5,7 @@ import { AnimatedTestimonials } from "./AnimatedTestimonials";
 
 export default function Clients () {
   return (
-    <div className="bg-[#1A1C1F]  h-[18rem] flex flex-col antialiased  items-center justify-center relative overflow-hidden">
+    <div id="clients" className="bg-[#1A1C1F]  h-[18rem] flex flex-col antialiased  items-center justify-center relative overflow-hidden">
       <AnimatedTestimonials
         items={testimonials}
         direction="right"

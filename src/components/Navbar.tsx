@@ -18,19 +18,19 @@ const Navbar = () => {
             <div className="hidden md:block ml-10">
               <div className="flex items-center space-x-4">
                 <a
-                  href="#"
+                  href="#solutions"
                   className="flex items-center px-3 py-2 text-lg hover:underline decoration-emerald-400 underline-offset-4"
                 >
                   Solutions
                 </a>
                 <a
-                  href="#"
+                  href="#products"
                   className="px-3 py-2 text-lg hover:underline decoration-emerald-400 underline-offset-4"
                 >
                   Products
                 </a>
                 <a
-                  href="#"
+                  href="#clients" style={{scrollPaddingTop: "80px"}}
                   className="flex items-center px-3 py-2 text-lg hover:underline decoration-emerald-400 underline-offset-4"
                 >
                   Customers
