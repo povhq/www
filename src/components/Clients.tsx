@@ -5,7 +5,9 @@ import { AnimatedTestimonials } from "./AnimatedTestimonials";
 
 export default function Clients () {
   return (
-    <div id="clients" className="bg-[#1A1C1F]  h-[18rem] flex flex-col antialiased  items-center justify-center relative overflow-hidden">
+    <div id="clients" className="bg-[#1A1C1F]  h-[18rem] flex flex-col antialiased  items-center justify-center relative overflow-hidden scroll-mt-20" style={{
+      scrollMarginTop: "80vh"
+    }}>
       <AnimatedTestimonials
         items={testimonials}
         direction="right"
@@ -18,31 +20,36 @@ export default function Clients () {
 const testimonials = [
   {
     quote:
-      "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
-    name: "Charles Dickens",
-    title: "A Tale of Two Cities",
+      "PovTech helped us streamline our CI/CD and integrate security with zero overhead. Their DevSecOps solution is truly next-level.",
+    name: "Jamie Liu, CTO at Replight",
+    title: "",
+  },
+  {
+    quote: "Migrating to the cloud was daunting until PovTech stepped in. Smooth, efficient, and with zero downtime—just what we needed.",
+    name: "Global Top 10 Restaurant Giant",
+    title: "",
   },
   {
     quote:
-      "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
-    name: "William Shakespeare",
-    title: "Hamlet",
-  },
-  {
-    quote: "All that we see or seem is but a dream within a dream.",
-    name: "Edgar Allan Poe",
-    title: "A Dream Within a Dream",
+      "The Finops tool from PovTech slashed our AWS bill by 32% in a month. It’s a no-brainer for any cloud-heavy startup.",
+    name: "Ankit Mehra, CEO at Billwise",
+    title: "",
   },
   {
     quote:
-      "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
-    name: "Jane Austen",
-    title: "Pride and Prejudice",
+      "PovTech’s Application Command Centre gave us complete visibility into our systems. It’s now our go-to for monitoring and alerts.",
+    name: "Dina Park, Head of Engineering at Snaplet.io",
+    title: "",
   },
   {
     quote:
-      "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
-    name: "Herman Melville",
-    title: "Moby-Dick",
+      "Socially by PovTech is a game-changer for our marketing team—finally a scheduler that feels like it was built by engineers.",
+    name: "Redbull",
+    title: "",
   },
+  {
+    quote: "We turned to PovTech for automation, and within weeks, our ops were running faster and with fewer bugs. Highly recommend.",
+    name: "Lena Roy, Encore Labs",
+    title: "x`"
+  }
 ];

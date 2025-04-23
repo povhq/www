@@ -18,7 +18,7 @@ function SpotlightPreview() {
           applications. <br />
           <br />
           <a
-            href="#"
+            href="#contactForm"
             className="text-xl text-black pt-3 pb-3 bg-emerald-500 hover:bg-emerald-600 px-4 py-2 rounded-md"
           >
             Book a Free Demo

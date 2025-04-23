@@ -30,7 +30,13 @@ const Navbar = () => {
                   Products
                 </a>
                 <a
-                  href="#clients" style={{scrollPaddingTop: "80px"}}
+                  style={{scrollPaddingTop: "80px"}}
+                  onClick={()=>{
+                    const target: any = document.querySelector('#clients');
+                    const offset = -130; // navbar height
+                    const y = target.getBoundingClientRect().top + window.pageYOffset + offset;
+                    window.scrollTo({ top: y, behavior: 'smooth' });
+                  }}
                   className="flex items-center px-3 py-2 text-lg hover:underline decoration-emerald-400 underline-offset-4"
                 >
                   Customers
@@ -100,7 +106,12 @@ const Navbar = () => {
               Products
             </a>
             <a
-              href="#clients"
+              onClick={()=>{
+                const target: any = document.querySelector('#clients');
+                const offset = -130; // navbar height
+                const y = target.getBoundingClientRect().top + window.pageYOffset + offset;
+                window.scrollTo({ top: y, behavior: 'smooth' });
+              }}
               className="block px-3 py-2 text-base hover:underline decoration-emerald-400 underline-offset-4"
             >
               Reviews
