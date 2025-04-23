@@ -35,12 +35,6 @@ const Navbar = () => {
                 >
                   Customers
                 </a>
-                <a
-                  href="#"
-                  className="flex items-center px-3 py-2 text-lg hover:underline decoration-emerald-400 underline-offset-4"
-                >
-                  Blog
-                </a>
               </div>
             </div>
           </div>
@@ -51,20 +45,23 @@ const Navbar = () => {
               <Search className="h-5 w-5" />
             </button>
             <a
-              href="#"
+              href="#contactForm"
               className="text-lg border border-emerald-400 text-emerald-500 px-4 py-2 rounded-md"
             >
-              Get Started Free
+             Get in touch 
             </a>
             <a
-              href="#"
+              href="#contactForm"
               className="text-lg border border-white  px-4 py-2 rounded-md"
             >
-              Get Pricing
+              Contact
             </a>
             <a
               href="#"
               className="text-lg hover:underline decoration-emerald-400 underline-offset-4"
+              onClick={()=>{
+                window.open("https://platform.postiz.com/auth/login")
+              }}
             >
                <ArrowRight className="h-4 w-4 -rotate-45" />Login to Socially
             </a>
@@ -91,40 +88,22 @@ const Navbar = () => {
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <a
-              href="#"
-              className="block px-3 py-2 text-base hover:underline decoration-emerald-400 underline-offset-4"
-            >
-              Platform
-            </a>
-            <a
-              href="#"
-              className="block px-3 py-2 text-base hover:underline decoration-emerald-400 underline-offset-4"
-            >
-              Pricing
-            </a>
-            <a
-              href="#"
+              href="#solutions"
               className="block px-3 py-2 text-base hover:underline decoration-emerald-400 underline-offset-4"
             >
               Solutions
             </a>
             <a
-              href="#"
+              href="#products"
               className="block px-3 py-2 text-base hover:underline decoration-emerald-400 underline-offset-4"
             >
-              Enterprise
+              Products
             </a>
             <a
-              href="#"
+              href="#clients"
               className="block px-3 py-2 text-base hover:underline decoration-emerald-400 underline-offset-4"
             >
-              Developers
-            </a>
-            <a
-              href="#"
-              className="block px-3 py-2 text-base hover:underline decoration-emerald-400 underline-offset-4"
-            >
-              Resources
+              Reviews
             </a>
             <div className="pt-4 space-y-2">
               <a
@@ -137,7 +116,7 @@ const Navbar = () => {
                 href="#"
                 className="block text-center border border-gray-600 hover:border-gray-400 px-4 py-2 rounded-md"
               >
-                Get Pricing
+                Contact
               </a>
             </div>
           </div>

@@ -140,10 +140,8 @@ function Footer() {
       { name: "DevSecOps", href: "#" }
     ],
     company: [
-      { name: "About", href: "#" },
-      { name: "Careers", href: "#" },
-      { name: "Blog", href: "#" },
-      { name: "Contact", href: "#" }
+      { name: "Contact", href: "#contactForm" },
+      { name: "Careers (Coming Soon)", href: "" }
     ]
   };
 
@@ -180,7 +178,7 @@ function Footer() {
       </section>
 
       {/* Get Started Form */}
-      <section className="py-20 px-4 md:px-8">
+      <section id="contactForm" className="py-20 px-4 md:px-8">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Get Started</h2>
@@ -292,16 +290,10 @@ function Footer() {
                 Engineering intelligent software solutions for modern businesses. Transform your operations with our cutting-edge technology.
               </p>
               <div className="flex space-x-4">
-                <a href="#" className="text-slate-400 hover:text-emerald-400 transition-colors">
+                <a onClick={()=>window.open("https://github.com/povhq")} className="text-slate-400 hover:text-emerald-400 transition-colors">
                   <Github className="w-6 h-6" />
                 </a>
-                <a href="#" className="text-slate-400 hover:text-emerald-400 transition-colors">
-                  <Twitter className="w-6 h-6" />
-                </a>
-                <a href="#" className="text-slate-400 hover:text-emerald-400 transition-colors">
-                  <Linkedin className="w-6 h-6" />
-                </a>
-                <a href="#" className="text-slate-400 hover:text-emerald-400 transition-colors">
+                <a href="mailto:pratham@povtech.dev" className="text-slate-400 hover:text-emerald-400 transition-colors">
                   <Mail className="w-6 h-6" />
                 </a>
               </div>
@@ -313,7 +305,7 @@ function Footer() {
               <ul className="space-y-3">
                 {footerLinks.products.map((link) => (
                   <li key={link.name}>
-                    <a href={link.href} className="text-slate-400 hover:text-emerald-400 transition-colors">
+                    <a  className="text-slate-400 hover:text-emerald-400 transition-colors">
                       {link.name}
                     </a>
                   </li>
@@ -327,7 +319,7 @@ function Footer() {
               <ul className="space-y-3">
                 {footerLinks.solutions.map((link) => (
                   <li key={link.name}>
-                    <a href={link.href} className="text-slate-400 hover:text-emerald-400 transition-colors">
+                    <a className="text-slate-400 hover:text-emerald-400 transition-colors">
                       {link.name}
                     </a>
                   </li>
@@ -341,7 +333,7 @@ function Footer() {
               <ul className="space-y-3">
                 {footerLinks.company.map((link) => (
                   <li key={link.name}>
-                    <a href={link.href} className="text-slate-400 hover:text-emerald-400 transition-colors">
+                    <a  className="text-slate-400 hover:text-emerald-400 transition-colors">
                       {link.name}
                     </a>
                   </li>
@@ -357,13 +349,13 @@ function Footer() {
                 © {new Date().getFullYear()} PovTech. All rights reserved.
               </p>
               <div className="flex space-x-6 mt-4 md:mt-0">
-                <a href="#" className="text-slate-400 hover:text-emerald-400 text-sm transition-colors">
+                <a  className="text-slate-400 hover:text-emerald-400 text-sm transition-colors">
                   Privacy Policy
                 </a>
-                <a href="#" className="text-slate-400 hover:text-emerald-400 text-sm transition-colors">
+                <a className="text-slate-400 hover:text-emerald-400 text-sm transition-colors">
                   Terms of Service
                 </a>
-                <a href="#" className="text-slate-400 hover:text-emerald-400 text-sm transition-colors">
+                <a className="text-slate-400 hover:text-emerald-400 text-sm transition-colors">
                   Cookie Policy
                 </a>
               </div>
