@@ -41,9 +41,9 @@ const Navbar = () => {
 
           {/* Secondary Navigation */}
           <div className="hidden md:flex items-center space-x-4">
-            <button className="p-2 hover:bg-gray-700 rounded-full">
+            {/* <button className="p-2 hover:bg-gray-700 rounded-full">
               <Search className="h-5 w-5" />
-            </button>
+            </button> */}
             <a
               href="#contactForm"
               className="text-lg border border-emerald-400 text-emerald-500 px-4 py-2 rounded-md"
